@@ -38,6 +38,9 @@ HWADDR="<%= @hw_address %>"
 <% if @mac_address -%>
 MACADDR="<%= @mac_address %>"
 <% end %>
+<% if @ethtool_opts %>
+ETHTOOL_OPTS="<%= @ethtool_opts %>"
+<% end %>
 <% if @vlan -%>
 VLAN="yes"
 <% end %>

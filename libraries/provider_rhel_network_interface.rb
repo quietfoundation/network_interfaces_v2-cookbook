@@ -56,6 +56,7 @@ class Chef
                       netmask: new_resource.netmask,
                       gateway: new_resource.gateway,
                       mac_address: new_resource.mac_address,
+                      ethtool_opts: new_resource.ethtool_opts,
                       hw_address: new_resource.hw_address,
                       broadcast: new_resource.broadcast,
                       bridge_device: new_resource.bridge_device,

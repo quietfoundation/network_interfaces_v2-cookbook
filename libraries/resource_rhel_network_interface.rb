@@ -88,6 +88,10 @@ class Chef
           set_or_return(:mac_address, arg, kind_of: String, regex: /^([0-9A-F]{2}[:-]){5}([0-9A-F]{2})$/)
         end
 
+        def ethtool_opts(arg = nil)
+          set_or_return(:ethtool_opts, arg, kind_of: String)
+        end
+
         def dns(arg = nil)
           set_or_return(:dns, arg, kind_of: [String, Array])
         end
